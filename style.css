@@ -1,0 +1,74 @@
+    body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+    }
+
+    .card {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+    .btn-custom {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    }
+
+    .btn-gamau {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    position: relative; /* Position relative untuk memungkinkan perubahan posisi */
+    }
+
+    img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    }
+
+    /* Button container for horizontal layout */
+    .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Spacing between buttons */
+    }
+
+    /* Remove color change on button click and focus */
+    .btn:active, .btn:focus {
+    background-color: inherit;
+    box-shadow: none;
+    outline: none;
+    }
+
+    /* Optional: Keep button colors consistent even when clicked */
+    .btn-custom:active, .btn-custom:focus {
+    background-color: #0056b3; /* A darker blue for the "Mau" button */
+    }
+
+    .btn-gamau:active, .btn-gamau:focus {
+    background-color: #c82333; /* A darker red for the "Gamau" button */
+    }
+
+    /* Make the final message hidden initially */
+    .final-message {
+    display: none;
+    font-size: 1.5rem;
+    color: #28a745;
+    text-align: center;
+    margin-top: 20px;
+    }
+
+    /* Hide the card initially after the final modal closes */
+    .card-hidden {
+    display: none;
+    }

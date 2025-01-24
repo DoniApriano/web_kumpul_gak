@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hai Gantenkkkkk!</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Main Card -->
+  <div class="card shadow-lg" id="mainCard">
+    <h1 class="card-title text-primary">Halo Teman - teman hari ini kumpul gak???😁</h1>
+    
+    <!-- Buttons placed side by side -->
+    <div class="button-container">
+      <button id="btn_mau" class="btn btn-custom" onclick="showModal()">Mau</button>
+      <button id="btn_gamau" class="btn btn-gamau" onclick="gamau(this)">Gamau</button>
+    </div>
+  </div>
+
+  <!-- Modal 1 - I LOVE YOU -->
+  <div class="modal fade" id="modalILoveYou" tabindex="-1" aria-labelledby="modalILoveYouLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Yeayyyyy gaskuyyyy</p>
+          <img src="https://media1.tenor.com/m/K-wLBEYEtr8AAAAd/sonic-freaky.gif" alt="Love Gif" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="showDateModal()">Lanjut</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 - Tanggal Hari Ini -->
+  <div class="modal fade" id="pesan" tabindex="-1" aria-labelledby="pesanLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>padahal besok masih kuliahhh wkwk</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="showThirdModal()">Kuyy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 - Tanggal Hari Ini -->
+  <div class="modal fade" id="modalTanggal" tabindex="-1" aria-labelledby="modalTanggalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTanggalLabel">CATAT GEYSSSSS !!!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="showFinalMessage()"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p id="tanggal"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="showFinalMessage()">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final Message (hidden by default) -->
+  <div class="final-message" id="finalMessage">
+    <h1>anjai jadi kumpul2 cooooyyyyyy.</h1>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
